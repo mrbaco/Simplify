@@ -1,0 +1,101 @@
+.el {
+  padding: 0 2px 6px 2px;
+  border: 2px solid #fff;
+  word-wrap: break-word;
+  text-align: center;
+  position: relative;
+  margin-bottom: 6px;
+  overflow: hidden;
+  display: block;
+  height: 114px;
+  width: 96px;
+  float: left;
+}
+
+.el:hover {
+  border-color: #ddd;
+}
+
+.el.full {
+  height: 200px;
+  width: 200px;
+}
+
+.el.selected {
+  border-color: #aaa;
+}
+
+.el .background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 6px auto;
+  height: 48px;
+  width: 48px;
+}
+
+.el.full .background {
+  width: 180px;
+  height: 180px;
+}
+
+.background.directory {
+  background-image: url('images/directory.png');
+}
+
+.background.file {
+  background-image: url('images/file.png');
+}
+
+.background.picture {
+  background-image: url('images/picture.png');
+}
+
+.el .remove {
+  background-color: #ddd;
+  position: absolute;
+  display: none;
+  height: 20px;
+  width: 20px;
+  right: 0;
+  top: 0;
+}
+
+.el .remove:hover {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+#preview {
+  text-align: center;
+  margin-top: 12px;
+  height: 100%;
+}
+
+#preview img {
+  max-width: 100%;
+}
+
+.url {
+  width: 100%;
+}
+
+.not_found {
+  margin-top: 12px;
+}
+
+.upload {
+  display: inline-block;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.upload input[type='file'] {
+  display: none;
+}
+
+.upload label {
+  display: block;
+  height: 100%;
+  width: 100%;
+}

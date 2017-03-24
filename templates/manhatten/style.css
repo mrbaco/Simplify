@@ -1,0 +1,575 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('roboto-condensed.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('roboto-light.ttf');
+}
+
+@font-face {
+  font-family: 'Rouble';
+  src: url('rouble.ttf');
+}
+
+body {
+  background: #eee;
+  font: 16px/1.4 'Roboto Condensed';
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+input[type='text'], input[type='password'], textarea, select {
+  font-size: 20px;
+  border: 1px solid #a9a9a9;
+  padding: 6px 2px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+h5 {
+  margin: 4px 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/*
+ * HEADER
+ *
+ */
+#header {
+  width: 100%;
+  background: url('images/city3_min.jpg') no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 12px;
+}
+ 
+#header #top .logotype {
+  background: url('images/mh_logo4.png') no-repeat;
+  padding: 16px 10px 0 92px;
+  display: inline-block;
+  margin-left: 3px;
+  line-height: 0.7;
+  font-size: 20px;
+  height: 80px;
+}
+
+#header #top .logotype a {
+  text-decoration: none;
+  color: #222;
+}
+
+#header #top .logotype a {
+  color: #333;
+}
+
+#header #top .logotype div {
+  text-align: center;
+}
+
+#header #top .logotype span {
+  font-size: 48px;
+}
+
+#header #top .menu {
+  padding: 12px 3px 12px 3px;
+  clear: both;
+}
+
+#header #top .menu .element {
+  text-decoration: none;
+  display: block;
+  border-radius: 3px;
+  background: #cc0000;
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  color: #fff;
+}
+
+#header #top .menu .element:hover {
+  background: #ee0000;
+}
+
+#header #title {
+  font-size: 42px;
+  padding: 12px 0 24px;
+  color: #000;
+}
+
+#header #ads {
+  margin: 0 auto;
+  height: 400px;
+  width: 980px;
+}
+
+#header #ads #news {
+  height: 380px;
+  width: 320px;
+  float: left;
+}
+
+#header #ads #news img {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+#header #ads #news #slides {
+	position: relative;
+	height: 380px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+#header #ads #news .slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+#header #ads #news .showing {
+	opacity: 1;
+	z-index: 2;
+}
+
+#header #ads #map {
+  height: 380px;
+  width: 648px;
+  float: right;
+}
+
+/*
+ * CONTENT
+ *
+ */
+#content {
+  width: 100%;
+}
+
+#content #map {
+  height: 380px;
+  width: 100%;
+}
+
+#content h1, #content h2 {
+  font-weight: normal;
+  margin: 0 0 12px;
+  line-height: 1.1;
+  font-size: 26px;
+  padding: 0;
+}
+
+#content h2 {
+  line-height: 1.1;
+  margin: 24px 0;
+  font-size: 22px;
+}
+
+#content .page {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 12px;
+  width: 98%;
+  padding: 0;
+}
+
+#content .page .page_wrapper {
+  padding: 0;
+}
+
+/*
+ * SIDEBAR
+ *
+ */
+#sidebar {
+  text-align: center;
+  overflow: hidden;
+  margin: 24px 0 12px;
+  height: 200px;
+  width: 100%;
+}
+
+#header #ads #news p, #sidebar p {
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar div {
+  display: inline-block;
+  margin: 0 6px 24px 6px;
+  height: 200px;
+  width: 200px;
+}
+
+#sidebar img {
+  height: 200px;
+  width: 200px;
+}
+
+/*
+ * FOOTER
+ *
+ */
+#footer {
+  font-family: 'Roboto Light';
+  margin-top: 12px;
+  background: url('images/city2_min.png') repeat-x;
+  padding-top: 90px;
+  color: #ddd;
+  width: 100%;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer h1 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+#footer #wrapper {
+  background: #3870c5;
+  width: 100%;
+}
+
+#footer #wrapper .cols {
+  width: 100%;
+}
+
+#footer #wrapper .col {
+  position: relative;
+  text-align: center;
+  padding: 12px 0;
+  width: 100%;
+}
+
+#footer .col.copyright {
+  text-align: center!important;
+}
+
+/*
+ * SUBCATEGORY
+ *
+ */
+.elements .category {
+  position: relative;
+  margin-bottom: 24px;
+  height: 460px;
+  padding: 0;
+}
+
+.elements .category h1 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 98% 90%, 53% 100%, 0 94%);
+  clip-path: polygon(0 0, 100% 0, 98% 90%, 53% 100%, 0 94%);
+  background: #ffcc00;
+  padding: 12px 24px!important;
+  position: absolute;
+  color: #222;
+  margin: 0!important;
+  left: 0;
+  top: 0;
+}
+
+.elements .category .title {
+  font-weight: normal;
+  position: absolute;
+  background: #fff;
+  font-size: 22px;
+  padding: 12px;
+  color: #333;
+  right: 20px;
+  top: 20px;
+}
+
+.elements .category .interest {
+  font-weight: normal;
+  position: absolute;
+  background: #fff;
+  font-size: 16px;
+  padding: 6px;
+  bottom: 20px;
+  color: #333;
+  left: 20px;
+}
+
+.elements .category .description {
+  height: 460px;
+}
+
+.elements .category a {
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 51% 0, 7% 12%);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 51% 0, 7% 12%);
+  text-decoration: none;
+  background: #3870c5;
+  padding: 18px 48px;
+  position: absolute;
+  color: #fff;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.elements .category a:hover {
+  background: #497bbc;
+}
+
+.baloon_photo {
+  background-size: cover;
+  position: relative;
+  height: 160px;
+  width: 200px;
+}
+
+.baloon_photo div {
+  background: #ffcc00;
+  position: absolute;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 3px;
+  right: 0;
+  top: 8px;
+}
+
+/*
+ * FULL ITEM
+ *
+ */
+#photos {
+  width: 100%;
+}
+
+#photos #current {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 460px;
+  width: 100%;
+}
+
+#photos #thumbs {
+  margin: 12px 0;
+}
+
+#photos #thumbs .thumb {
+  background-size: cover;
+  display: inline-block;
+  cursor: pointer;
+  height: 120px;
+  width: 120px;
+  opacity: 0.7;
+}
+
+#photos #thumbs .thumb:hover {
+  opacity: 1;
+}
+
+#photos #thumbs .thumb.active {
+  border: 3px solid #222;
+  height: 114px;
+  width: 114px;
+  opacity: 1;
+}
+
+#money, #about {
+  background: #ccc;
+  padding: 12px;
+}
+
+#money #price {
+  float: left;
+  line-height: 1.1;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+#money #price .comission {
+  font-size: 14px;
+  color: #333;
+}
+
+#money #agent {
+  width: 280px;
+  float: right;
+}
+
+#money #agent #photo {
+  background-size: cover;
+  margin-right: 12px;
+  height: 64px;
+  width: 64px;
+  float: left;
+}
+
+#money #agent #phone {
+  padding-top: 16px;
+  font-size: 24px;
+  line-height: 0.7;
+}
+
+#money #agent #phone span {
+  font-size: 12px;
+}
+
+#about .square, #about .house_type, #about .subcategory {
+  margin: 6px;
+}
+
+#description {
+  margin-top: 24px;
+}
+
+.checkbox {
+  padding: 6px 6px 6px 20px;
+  background: url('images/checkbox.png') no-repeat left;
+  margin: 0 12px;
+  float: left;
+}
+
+.rouble {
+  font-family: 'Rouble';
+}
+
+.clear {
+  clear: both;
+}
+
+.t {
+  display: none;
+}
+
+.f {
+  display: none;
+}
+
+/*
+ * Media query for tablet
+ *
+ */
+@media screen and (min-width: 575px) {
+  #header {
+    background: url('images/city3_mid.jpg') no-repeat;
+  }
+  
+  #header #top .menu {
+    padding-bottom: 30px;
+  }
+  
+  #header #top .menu .element {
+    margin: 24px 3px;
+    display: inline;
+  }
+  
+  #footer #wrapper .col.right {
+    float: right;
+  }
+  
+  .t {
+    display: block;
+  }
+}
+
+/*
+ * Media query for PC
+ *
+ */
+@media screen and (min-width: 998px) {
+  #header {
+    background: url('images/city3_big.jpg') no-repeat;
+  }
+  
+  #header #top {
+    margin: 0 auto;
+    width: 980px;
+  }
+  
+  #header #top .logotype {
+    margin-left: 10px;
+    float: left;
+  }
+  
+  #header #top .menu {
+    padding: 30px 10px;
+    float: right;
+    clear: none;
+  }
+  
+  #header #top .menu .element {
+    margin: 24px 10px;
+  }
+  
+  #content {
+    width: 980px;
+    padding: 24px 0;
+    margin: 0 auto;
+  }
+  
+  #content .page {
+    margin: 0 0 12px;
+    float: left;
+    width: 768px;
+  }
+  
+  #sidebar {
+    height: auto;
+    width: 200px;
+    float: right;
+    margin: 0;
+  }
+  
+  #sidebar div {
+    margin-left: 0;
+    display: block;
+  }
+  
+  #footer {
+    background: url('images/city2.png') repeat-x;
+  }
+  
+  #footer #wrapper .col {
+    width: auto;
+    text-align: left;
+    float: left;
+  }
+  
+  #footer #wrapper .cols {
+    margin: 0 auto;
+    width: 980px;
+  }
+  
+  .m {
+    display: none;
+  }
+  
+  .f {
+    display: block;
+  }
+}

@@ -1,0 +1,271 @@
+.elements {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 98%;
+  padding: 0;
+}
+
+.elements .object {
+  margin-bottom: 24px;
+  position: relative;
+  background: #ddd;
+  width: 100%;
+  float: left;
+}
+
+.elements .object .agent_name  {
+  padding: 6px;
+  opacity: 0.7;
+  background: #aaa;
+  font-size: 10px;
+  bottom: 6px;
+  right: 0;
+}
+
+.elements .object .action {
+  border-radius: 0 5px 0 0;
+  background: #00aa00;
+  padding: 3px 6px;
+  bottom: 0;
+  left: 0;
+}
+
+.elements .object .action.rent {
+  background: #56DB40;
+}
+
+.elements .object .action.sell {
+  background: #177BC9;
+  color: #fff;
+}
+
+.elements .object .control, .elements .agent .control {
+  right: 0;
+}
+
+.elements .object .control .edit, .elements .agent .control .edit {
+  text-decoration: none;
+  display: inline-block;
+  background: #0000cc;
+  font-weight: bold;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.elements .object .control .edit:hover, .elements .agent .control .edit:hover {
+  background-color: #0000aa;
+  color: #fff;
+}
+
+.elements .object .control .remove, .elements .agent .control .remove {
+  border-radius: 0 5px 0 0;
+  text-decoration: none;
+  display: inline-block;
+  background: #cc0000;
+  font-weight: bold;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.elements .object .control .remove:hover, .elements .agent .control .remove:hover {
+  background: #aa0000;
+  color: #fff;
+}
+
+.elements .object .subcategory {
+  clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 0% 50%, 0 1%);
+  padding: 3px 16px 3px 12px;
+  background: #ffcc00;
+  color: #000;
+  top: 8px;
+}
+
+.elements .object .subcategory div {
+  position: absolute;
+  height: 28px;
+  right: -8px;
+  width: 8px;
+  top: 0;
+}
+
+.elements .object .agent_name, .elements .object .action, .elements .object .control, .elements .agent .control, .elements .object .subcategory {
+  position: absolute;
+}
+
+.elements .object .photo {
+  background-position: center center;
+  border-radius: 5px 5px 0 0;
+  background-size: cover;
+  position: relative;
+  height: 150px;
+  float: none;
+}
+
+.elements .object .info {
+  border: 1px solid #aaa;
+  border-top: none;
+  overflow: hidden;
+  height: 148px;
+}
+
+.elements .object .line {
+  border-bottom: 1px solid #aaa;
+  background: #fff;
+  font-size: 16px;
+}
+
+.elements .object .line .title {
+  padding: 4px 12px;
+  float: left;
+}
+
+.elements .object .line .price {
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+  padding: 11px 8px 11px 20px;
+  background: #ffcc00;
+  font-weight: bold;
+  font-size: 22px;
+  float: right;
+}
+
+.elements .object .icons {
+  font-size: 14px;
+  margin: 4px 0;
+  float: left;
+}
+
+.elements .object .icons div {
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  border: 1px solid #aaa;
+  margin: 6px 3px;
+  height: 32px;
+}
+
+.elements .object .icons .district {
+  background: #ddd url('images/district.png') no-repeat;
+}
+
+.elements .object .icons .square {
+  background: #ddd url('images/square.png') no-repeat;
+}
+
+.elements .object .icons span {
+  display: block;
+  border-left: 1px solid #aaa;
+  background: #fff;
+  padding: 4px 16px;
+  border-radius: 0 5px 5px 0;
+  margin-left: 32px;
+  height: 24px;
+}
+
+.elements .object .icons .phone span {
+  padding: 6px 16px 2px;
+}
+
+.elements .object .full {
+  clip-path: polygon(0% 0%, 92% 0, 100% 50%, 92% 100%, 0% 100%);
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 10px 0 16px 0;
+  background: #3870c5;
+  text-align: center;
+  margin: 27px 3px 27px 0;
+  width: 130px;
+  height: 14px;
+  float: right;
+  color: #fff;
+}
+
+.elements .object .full:hover {
+  background: #497bbc;
+}
+
+.elements .agent {
+  position: relative;
+  margin: 12px 0;
+  float: left;
+  width: 100%;
+}
+
+.elements .agent .photo {
+  background-position: center center;
+  border-radius: 5px 5px 0 0;
+  background-size: cover;
+  position: relative;
+  height: 160px;
+  width: 100%;
+}
+
+.elements .agent .phone {
+  background: #fff url('images/phone.png') no-repeat;
+  padding: 3px 3px 3px 32px;
+  line-height: 26px;
+  position: absolute;
+  height: 26px;
+  opacity: 0.7;
+  bottom: 6px;
+  right: 0;
+}
+
+.elements .agent .line {
+  border: 1px solid #aaa;
+}
+
+.elements .agent .line .title {
+  background: #ddd;
+  text-align: center;
+  font-size: 18px;
+  padding: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .elements .object .action {
+    border-radius: 0 5px 0 5px;
+  }
+  
+  .elements .object .control .remove {
+    border-radius: 0;
+  }
+  
+  .elements .object .photo {
+    border-radius: 5px 0 0 5px;
+    width: 320px;
+    float: left;
+  }
+  
+  .elements .object .icons {
+    font-size: 16px;
+    margin: 4px 10px;
+  }
+  
+  .elements .object .full {
+    margin: 27px 10px;
+  }
+  
+  .elements .object .info {
+    border: 1px solid #aaa;
+    border-left: none;
+  }
+  
+  .elements .agent {
+    margin: 0.5%;
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .elements {
+    margin: 0;
+    float: left;
+    width: 768px;
+  }
+  
+  .elements .agent {
+    margin: 0.66%;
+    width: 32%;
+  }
+}
