@@ -16,7 +16,9 @@ To create module, create path module_name/module_name.php at the modules folder 
 Then you should create module description array:
 
 $simplify->init('module_name', array (
+
   // array of routes with regular expression => route name elements
+  
   'routing' => array (
     '/first_page.html/i' => 'first_page'
   )
@@ -25,7 +27,9 @@ $simplify->init('module_name', array (
 Then you should create module class:
 
 class module_name {
+
   // $route - a value from description array
+  
   public function routing($route) {
     global $simplify;
     
